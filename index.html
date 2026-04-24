@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+    
+    <style>
+        body {
+            
+            display: flex;
+            justify-content: center;  /* horizontal center */
+            align-items: center;      /* vertical center */
+            
+        }
+        h1{
+            display: flex;
+            justify-content: center;  /* horizontal center */
+            align-items: flex-start;      /* vertical center */
+        
+        }   
+        form{
+            display: flex;
+            justify-content: center;  /* horizontal center */
+            align-items: center;    
+        }
+         </style>
+
+</head>
+
+<body>
+
+    <h1>Bulk Purchase Planner</h1>
+
+    <form method="POST" action="/submit">
+        <label>Product Name:</label>
+        <input type="text" name="product" required>
+        <br><br>
+
+        <label>Quantity:</label>
+        <input type="number" name="quantity" required>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html> 
